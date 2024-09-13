@@ -60,7 +60,10 @@ const syncAndSeed = async() => {
   await createPet('tortoise', 'pepe', lisa.id);
   await createPet('bunny', 'floofer', lisa.id);
   await createPet('cat', 'jason', paul.id);
-  console.log('PETS CREATED!')
+  console.log('PETS CREATED!');
+
+  client.end();
+  console.log('CONNECTION CLOSED');
 }
 
 syncAndSeed();
